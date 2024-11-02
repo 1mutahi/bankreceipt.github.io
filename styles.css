@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #90CAF9, #FFAB91); 
+  }
+  
+
+  .container {
+    background: #ffffff;
+    padding: 2rem;
+    height: 70vh;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Form Title */
+  .container h2 {
+    color: #37474F;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  .input-box {
+    position: relative;
+    margin: 0.5rem 0;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 1rem 1rem;
+    background: #F5F5F5; 
+    border: 1px solid #B0BEC5; 
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input-box input:focus {
+    border-color: #42A5F5; 
+  }
+  
+  .input-box label {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9E9E9E; 
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input-box input:focus ~ label,
+  .input-box input:not(:placeholder-shown) ~ label {
+    top: -17px;
+    font-size: 0.95rem;
+    color: #42A5F5;
+  }
+  
+
+  .button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    background: #FF7043; 
+    color: #FFFFFF; 
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .button:hover {
+    background: #F4511E; 
+  }
+  
+  
+  .footer {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: #546E7A; 
+  }
+  
+  .footer a {
+    color: #42A5F5; 
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+ 
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #90CAF9, #FFAB91); 
+}
+
+
+.welcome-container h1 {
+  color: #37474F; 
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Logout Button */
+.logout-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background: #FF7043; 
+  color: #FFFFFF; 
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.logout-button:hover {
+  background: #F4511E; 
+}
+
+
+.welcome-container a {
+  color: #42A5F5; 
+  text-decoration: none;
+}
+
+.welcome-container a:hover {
+  text-decoration: underline;
+}
